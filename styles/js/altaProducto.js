@@ -1,9 +1,12 @@
-function agregarFila() {
-  const id = () => {
-    for (let i = 0; i < 200; i++) {
-       i++;
-    }
+function idrandomInt(max) {
+      return Math.floor(Math.random() * max);
   };
+
+
+
+
+function agregarFila() {
+  
 
   //Obtención de valores de los inputs
 
@@ -27,7 +30,7 @@ function agregarFila() {
   const anaquel = fila.insertCell(3);
   const cantidad = fila.insertCell(4);
 
-  num.innerHTML = id ();
+  num.innerHTML = idrandomInt(200);
   codigo.innerHTML = inputCodigo;
   nombre.innerHTML = inputNom;
   anaquel.innerHTML = inputAnaquel;
